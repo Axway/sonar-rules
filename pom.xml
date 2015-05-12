@@ -6,16 +6,46 @@
     <groupId>org.axway.sonar</groupId>
     <artifactId>axway-sonar-rules</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <sonar-java-plugin.version>3.2</sonar-java-plugin.version>
+        <sonar-plugin-api.version>4.5</sonar-plugin-api.version>
+    </properties>
     <packaging>sonar-plugin</packaging>
 
     <name>Axway Sonar Rules</name>
     <description>Axway Sonar rules</description>
+    <url>https://github.com/Axway/sonar-rules</url>
+
+    <organization>
+        <name>Axway</name>
+        <url>http://axway.com</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Axway/sonar-rules</url>
+        <connection>scm:git:git@github.com:Axway/sonar-rules.git</connection>
+        <developerConnection>scm:git:git@github.com:Axway/sonar-rules.git</developerConnection>
+    </scm>
+
+    <inceptionYear>2015</inceptionYear>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/Axway/sonar-rules/issues</url>
+    </issueManagement>
 
     <dependencies>
         <dependency>
             <groupId>org.codehaus.sonar</groupId>
             <artifactId>sonar-plugin-api</artifactId>
-            <version>4.5</version>
+            <version>${sonar-plugin-api.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -23,7 +53,7 @@
             <groupId>org.codehaus.sonar-plugins.java</groupId>
             <artifactId>sonar-java-plugin</artifactId>
             <type>sonar-plugin</type>
-            <version>3.2</version>
+            <version>${sonar-java-plugin.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -44,18 +74,6 @@
             <artifactId>logback-classic</artifactId>
             <version>0.9.30</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>0.9.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooq</groupId>
-            <artifactId>joor</artifactId>
-            <version>0.9.5</version>
         </dependency>
     </dependencies>
 
