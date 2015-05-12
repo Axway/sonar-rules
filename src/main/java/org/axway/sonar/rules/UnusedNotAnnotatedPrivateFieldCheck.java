@@ -8,6 +8,9 @@ import org.sonar.plugins.java.api.JavaFileScannerContext;
 import org.sonar.plugins.java.api.semantic.Symbol;
 import org.sonar.plugins.java.api.tree.*;
 
+/**
+ * Check that non annotated private fields are used.
+ */
 public class UnusedNotAnnotatedPrivateFieldCheck extends BaseTreeVisitor implements JavaFileScanner {
 
     public static final String RULE_KEY = "UnusedNotAnnotatedPrivateField";

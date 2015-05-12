@@ -9,7 +9,7 @@ import java.util.Arrays;
  * Instantiates the "checks" (implementations of rules) that are executed during
  * source code analysis.
  */
-public class MyJavaFileScannersFactory implements CheckRegistrar {
+public class AxwayJavaFileScannersFactory implements CheckRegistrar {
 
     /**
      * Lists all the checks provided by the plugin

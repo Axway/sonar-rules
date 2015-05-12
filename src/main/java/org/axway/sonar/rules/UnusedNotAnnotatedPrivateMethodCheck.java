@@ -10,6 +10,9 @@ import org.sonar.plugins.java.api.tree.MethodTree;
 
 import java.util.List;
 
+/**
+ * Check that non annotated private methods are used.
+ */
 public class UnusedNotAnnotatedPrivateMethodCheck extends BaseTreeVisitor implements JavaFileScanner {
 
     public static final String RULE_KEY = "UnusedNotAnnotatedPrivateMethod";

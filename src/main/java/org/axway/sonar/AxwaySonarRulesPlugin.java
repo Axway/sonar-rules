@@ -6,7 +6,7 @@ import org.sonar.api.SonarPlugin;
 import java.util.List;
 
 /**
- * Created by clement on 17/03/15.
+ * Axway SonarQube Plugin.
  */
 public class AxwaySonarRulesPlugin extends SonarPlugin {
 
@@ -16,6 +16,6 @@ public class AxwaySonarRulesPlugin extends SonarPlugin {
     public List getExtensions() {
         return ImmutableList.of(
                 AxwayRules.class,
-                MyJavaFileScannersFactory.class);
+                AxwayJavaFileScannersFactory.class);
     }
 }
